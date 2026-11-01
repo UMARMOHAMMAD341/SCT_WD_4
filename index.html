@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your day, achieve your goals.</p>
+        </header>
+
+        <section class="task-input">
+            <h2>Add a New Task</h2>
+
+            <input type="text" id="taskInput"
+                placeholder="Enter your task...">
+
+            <div class="task-details">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+            </div>
+
+            <button id="addTaskBtn">+ Add Task</button>
+        </section>
+
+        <section class="task-list">
+            <h2>My Tasks</h2>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">No tasks yet. Add your first task!</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
